@@ -1,0 +1,417 @@
+/*
+ * Theme Name: Havawebsite
+ * Description: Used to style the TinyMCE editor.
+**/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+ # Body
+ # Typography
+ # Elements
+ # Alignment
+ # Caption
+ # Galleries
+ # Audio / Video
+ # RTL
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+
+body {
+	background-color: #FFFFFF;
+	font-family: "Open Sans",Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 20px 40px;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 600;
+	margin: 20px 0px 10px;
+}
+
+h1 {
+	font-size: 30px;
+        font-weight: 800;
+}
+h2 {
+	font-size: 25px;
+        font-weight: 800;
+}
+h3 {
+        font-size: 22px;
+}
+h4 {
+        font-size: 20px;
+}
+h5 {
+        font-size: 18px;
+}
+h6 {
+        font-size: 16px;
+}
+p {
+	margin: 0px 0px 10px;
+}
+b,
+strong {
+	font-weight: 800;
+}
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+a {
+	color: #F8991D;    
+	text-decoration: none;
+}
+a:hover {
+	color:#1465CC;
+	cursor: pointer;
+}
+blockquote {
+	margin: 0 0 35px -21px;
+	border-left: 7px solid #999999;
+	padding-left: 17px;
+	font-size: 20px;
+	font-style: italic;
+	background-color: #eee;
+	color: #999999;
+
+}
+
+blockquote > blockquote {
+	margin-left: 0;
+}
+
+blockquote p {
+	margin-bottom: 35px;
+}
+
+blockquote > p:last-child {
+	margin-bottom: 0;
+}
+blockquote cite,
+blockquote small {
+	color: #999999;
+	font-size: 17px;
+}
+blockquote em,
+blockquote i,
+blockquote cite {
+	font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+	font-weight: 600;
+}
+address {
+	font-style: italic;
+	margin: 0 0 28px;
+}
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+pre {
+	background:#EEEEEE;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+abbr[title] {
+	border-bottom: 1px dotted #eaeaea;
+	cursor: help;
+}
+mark,
+ins {
+	background:#fff9c0;
+	text-decoration: none;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+blockquote p:before, p q:before {
+	display: inline-block;
+	padding: 0px 5px;
+	vertical-align: baseline;
+	font-family: "Dashicons";
+	font-size: 1.5em;
+	-webkit-font-smoothing: antialiased;
+	content: "\f122";
+}
+blockquote:after, q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color:#ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*--------------------------------------------------------------
+# Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+/*--------------------------------------------------------------
+# Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Audio & Video
+--------------------------------------------------------------*/
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+/*--------------------------------------------------------------
+# RTL - Right to Left Languages such as Hebrew 
+--------------------------------------------------------------*/
+body.rtl {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+.rtl blockquote {
+	border-left: none;
+	border-right: 7px solid #999999;
+	margin: 0 -21px 35px 0;
+	padding-left: 0;
+	padding-right: 17px;
+}
+
+.rtl blockquote > blockquote {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.rtl li > ul,
+.rtl li > ol {
+	margin: 0 23px 0 0;
+}
+
+.rtl table th,
+.rtl table caption {
+	text-align: right;
+}

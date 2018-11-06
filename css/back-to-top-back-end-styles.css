@@ -1,0 +1,24 @@
+/* Back to Top Widget Back End Style */
+@font-face {
+
+  font-family: 'Glyphicons Halflings';
+  src:  url('../fonts/glyphicons-halflings-regular.woff') format('woff');
+}
+
+.glyphicon {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    font-size: 2.5em;
+    line-height: 1;
+    font-family: "Glyphicons Halflings";
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: middle;
+}
+.glyphicon-circle-arrow-up:before {
+    color: rgba(20,101, 204, .7);
+    margin-right:.5em;
+    content: "\e133";
+}
